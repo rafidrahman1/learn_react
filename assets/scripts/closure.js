@@ -4,5 +4,5 @@ function outer() {
   return inner;
 }
 const newFunction = outer();
-newFunction();
-newFunction();
+// newFunction();
+// newFunction();
