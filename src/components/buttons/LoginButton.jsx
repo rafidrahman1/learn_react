@@ -28,7 +28,8 @@ const LoginButton = () => {
     try {
       const response = await new Promise((resolve) =>
         window.FB.login(resolve, {
-          scope: "public_profile,email,pages_show_list,pages_read_engagement,pages_manage_posts",
+          scope: "public_profile,email,pages_manage_posts,pages_read_engagement",
+          auth_type: "rerequest",
           return_scopes: true
         })
       );
