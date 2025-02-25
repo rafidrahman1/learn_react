@@ -9,17 +9,16 @@ export function setupCounter(element) {
 
   const setCounter = value => {
     counter = adjustCounterValue(value);
-    const text = `${counter}`;
-    element.innerHTML = text;
+    element.innerHTML = `${counter}`;
   };
 
-  document.getElementById('increaseByOne').addEventListener('click', () => setCounter(counter + 1));
-  document.getElementById('decreaseByOne').addEventListener('click', () => setCounter(counter - 1));
-  document.getElementById('increaseByTwo').addEventListener('click', () => setCounter(counter + 2));
-  document.getElementById('decreaseByTwo')
+  document.getElementById("increaseByOne").addEventListener("click", () => setCounter(counter + 1));
+  document.getElementById("decreaseByOne").addEventListener("click", () => setCounter(counter - 1));
+  document.getElementById("increaseByTwo").addEventListener("click", () => setCounter(counter + 2));
+  document.getElementById("decreaseByTwo");
 
   setCounter(0);
 }
 
-setupCounter(document.getElementById('counter-value'));
+setupCounter(document.getElementById("counter-value"));
 
